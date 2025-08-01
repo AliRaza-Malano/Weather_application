@@ -11,7 +11,7 @@ A simple and responsive Weather App that fetches real-time weather data using a 
 
 ## 🔗 Live Preview
 
-[Click here to view the live app](https://aliraza-malano.github.io/Weather_App/)
+[Click here to view the live app](https://aliraza-malano.github.io/Weather_application/)
 
 ## 🚀 Technologies Used
 
