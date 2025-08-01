@@ -7,7 +7,6 @@ A simple and responsive Weather App that fetches real-time weather data using a 
 - 🔍 Search weather by city name
 - 🌡️ Real-time temperature, humidity, and weather description
 - 📍 Responsive design for all screen sizes
-- 🌙 Light and dark mode (optional if implemented)
 
 ## 🔗 Live Preview
 
