@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="weather-card">
+            <div class="weather-header">
+                <h1>Weather Forecast</h1>
+                <p>Get real-time weather updates</p>
+
+                <div class="search-container">
+                    <input type="text" id="cityInput" class="search-input" placeholder="Enter city name...">
+                    <button class="search-btn" onclick="getWeather()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Loading weather data...</p>
+            </div>
+
+            <div class="error-message" id="errorMessage">
+                City not found. Please try another location.
+            </div>
+
+            <div class="weather-content" id="weatherResult">
+                <div class="weather-main">
+                    <div>
+                        <h2 class="city-name" id="cityName">New York</h2>
+                        <p class="weather-desc" id="weatherDesc">Partly cloudy</p>
+                        <div class="weather-temp" id="temperature">24</div>
+                    </div>
+                    <img class="weather-icon" id="weatherIcon" src="" alt="Weather icon">
+                </div>
+
+                <div class="weather-details">
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-temperature-low"></i>
+                        </div>
+                        <div class="detail-text">
+                            <span class="detail-label">Feels Like</span>
+                            <span class="detail-value" id="feelsLike">25°C</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="detail-text">
+                            <span class="detail-label">Humidity</span>
+                            <span class="detail-value" id="humidity">65%</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <div class="detail-text">
+                            <span class="detail-label">Wind Speed</span>
+                            <span class="detail-value" id="windSpeed">12 km/h</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-compress-arrows-alt"></i>
+                        </div>
+                        <div class="detail-text">
+                            <span class="detail-label">Pressure</span>
+                            <span class="detail-value" id="pressure">1012 hPa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
